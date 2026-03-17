@@ -287,7 +287,7 @@
           },
           {
             "title": "Le hub des certifications pros !",
-            "description": "Votre marketplace incontournable pour la certification professionnelle.\nProfessionnels de santé : découvrez toutes les formations certifiantes en un clic.\nVotre marketplace incontournable pour la certification professionnelle.\nProfessionnels de santé : découvrez toutes les formations certifiantes en un clic.\nOrganismes de formation : boostez votre visibilité dans l'écosystème santé.  \n<a href=\"#contact\" class=\"contact-us\">Contactez-nous</a> dès maintenant pour valider ou booster votre offre de certifications !",
+            "description": "Votre marketplace incontournable pour la certification professionnelle.\nProfessionnels de santé : découvrez toutes les formations certifiantes en un clic.\nOrganismes de formation : boostez votre visibilité dans l'écosystème santé.  \n<a href=\"#contact\" class=\"contact-us\">Contactez-nous</a> dès maintenant pour valider ou booster votre offre de certifications !",
             "imageUrl": "/assets/images/placeholders/product-offering-3.jpg"
           }
         ]
@@ -298,18 +298,18 @@
         "description": "Tout est connecté",
         "capabilities": [
           {
-            "title": "Audit en temps réel",
+            "title": "Audit en ligneAudits temps réel et auto-évaluation pour conformité multi-certifications",
             "description": "Les crédits du DPC sont suivis en temps réel et automatiquement transmis à l'autorité concernée. La valorisation publique des organismes du DPC et de leurs formations contribue à réduire significativement les besoins en audits.",
             "imageUrl": "/assets/images/icons/real-time-auditing-icon.svg"
           },
           {
             "title": "MARKETPLACE",
-            "description": "Un large choix de cours, facilement filtrables par date, lieu, spécialité, catégorie et organisme d'accréditation.",
+            "description": "MarketplaceOffre en ligne des formations certifiantes par organismes accrédités.",
             "imageUrl": "/assets/images/icons/market-place-icon.svg"
           },
           {
             "title": "Accréditation électronique ",
-            "description": "Les conseils ou organismes d'accréditation peuvent approuver les organismes de DPC soit annuellement, soit au cas par cas pour chaque formation.",
+            "description": "Changer Accréditation par CertificationGestion des certifications des professionnels avec suivi de la conformité HAS.",
             "imageUrl": "/assets/images/icons/electronic-accreditation-icon.svg"
           },
           {
