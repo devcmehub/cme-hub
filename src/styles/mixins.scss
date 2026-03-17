@@ -1,0 +1,75 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-primary {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 30px;
+
+  border: none;
+  /* Button */
+  position: relative;
+  height: 56px;
+  padding: 16px 24px 16px 24px;
+  background: linear-gradient(
+    123deg,
+    rgb(12, 145, 230) 38.185%,
+    rgb(7, 81, 128) 102.994%
+  );
+  /* Hover effect for .button_primary */
+  &:hover {
+    /* Subtle brightness increase */
+    filter: brightness(1.1);
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Smooth transition for all changes */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; /* Change cursor to pointer */
+    transform: translateY(-2px);
+  }
+
+  // @media (max-width: 768px) {
+  //   padding: 0.8rem 1.6rem;
+  //   margin-right: 8px;
+  // }
+}
+
+@mixin button-base {
+  /* Button */
+  text-decoration: none;
+  position: relative;
+  height: 56px;
+  padding: 16px 24px 16px 24px;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.05));
+  /* Hover effect for .button_outlined */
+  &:hover {
+    /* Invert colors */
+    background-color: var(--color-white);
+    color: rgba(12, 145, 230, 1);
+    border-color: transparent; /* Remove border on hover */
+    transform: translateY(-2px);
+    /* Optional: Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    /* Smooth transition */
+    transition: all 0.5s ease-in-out;
+    cursor: pointer; /* Change cursor to pointer */
+  }
+}

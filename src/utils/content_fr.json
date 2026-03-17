@@ -1,0 +1,173 @@
+{
+  "navbar": {
+    "imageUrl": "/assets/images/cme-hub-logo.svg",
+    "links": [
+      { "text": "Accueil", "url": "#value-proposition" },
+      { "text": "Solutions", "url": "#product-offerings" },
+      { "text": "Fonctionnalités", "url": "#features" },
+      { "text": "Contactez-nous", "url": "#contact" }
+    ]
+  },
+  "hero": {
+    "title": "La Platforme LMS du DPC",
+    "description": "Assurez la conformité de vos professionnels de santé",
+    "buttonText1": "Get Started ",
+    "buttonText2": "Request Demo"
+  },
+  "about": {
+    "id": "what-is-cme-hub",
+    "title": "QU'EST-CE QUE CME HUB ?",
+    "description": "CME Hub offre aux autorités de santé une solution centralisée et sécurisée pour garantir la conformité des professionnels de santé. La plateforme permet de dématérialiser l’ensemble du processus de traçabilité du DPC, y compris l’approbation des accréditations essentielles, assurant ainsi un suivi rigoureux et efficace."
+  },
+
+  "sections": [
+    {
+      "id": "value-proposition",
+      "title": "Tous les processus liés au DPC sont centralisés sur une interface unifiée",
+      "subDescription": "CME Hub est le système de gestion de l’apprentissage (LMS) dédié au développement professionnel continu (DPC). Il connecte l’ensemble des acteurs clés de l’écosystème via une plateforme unifiée, facilitant ainsi une gestion plus efficace du DPC et une digitalisation complète du processus.",
+      "imageUrl": "/assets/images/placeholders/value-proposition.png"
+    },
+    {
+      "id": "product-offerings",
+      "title": "Nos Solutions",
+      "offerings": [
+        {
+          "title": "Macro Hub",
+          "description": "Conçu pour les autorités nationales de santé, Macro Hub intègre des modules spécialisés pour les instances d’accréditation et d’agrément. Il met en place un système LMS unifié, permettant le suivi en temps réel de toutes les activités de DPC ainsi que de la conformité des professionnels de santé, dans un environnement centralisé et sécurisé.",
+          "imageUrl": "/assets/images/placeholders/product-offering-1.jpg"
+        },
+        {
+          "title": "Micro Hub",
+          "description": "Recommandé pour les organismes de DPC et les hôpitaux souhaitant assurer la conformité de leurs professionnels de santé, Micro Hub offre une visibilité complète sur les performances DPC de leur personnel. Les rapports générés peuvent être transmis facilement aux autorités nationales, simplifiant ainsi les obligations réglementaires.",
+          "imageUrl": "/assets/images/placeholders/product-offering-2.jpg"
+        },
+        {
+          "title": "Marketplace du DPC",
+
+          "description": "Notre plateforme est le point de référence incontournable pour le DPC. Les professionnels de santé y trouvent l'ensemble des offres de formation DPC, tandis que les organismes de DPC bénéficient d'une visibilité renforcée au sein de l’écosystème. <br/> Pour en savoir plus sur notre solution et sa disponibilité dans votre pays,  n’hésitez pas à <a href=\"#contact\" class=\"contact-us\">nous contacter</a>",
+
+          "imageUrl": "/assets/images/placeholders/product-offering-3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "platform-capabilities",
+      "title": "Fonctionnalités de la plateforme",
+      "description": "Tout est connecte",
+      "capabilities": [
+        {
+          "title": "Audit en temps réel",
+          "description": "Les crédits du DPC sont suivis en temps réel et automatiquement transmis à l'autorité concernée. La valorisation publique des organismes du DPC et de leurs formations contribue à réduire significativement les besoins en audits.",
+          "imageUrl": "/assets/images/icons/real-time-auditing-icon.svg"
+        },
+        {
+          "title": "MARKETPLACE",
+          "description": "Un large choix de cours, facilement filtrables par date, lieu, spécialité, catégorie et organisme d'accréditation.",
+          "imageUrl": "/assets/images/icons/market-place-icon.svg"
+        },
+        {
+          "title": "Accréditation électronique ",
+          "description": "Les conseils ou organismes d'accréditation peuvent approuver les organismes de DPC soit annuellement, soit au cas par cas pour chaque formation.",
+          "imageUrl": "/assets/images/icons/electronic-accreditation-icon.svg"
+        },
+        {
+          "title": "Contrôle de présence",
+          "description": "Confirmation électronique de la présence et de la durée de chaque session de formation.",
+          "imageUrl": "/assets/images/icons/attendance-control-icon.svg"
+        },
+        {
+          "title": "Application en marque blanche",
+          "description": "Une application mobile prête à l'emploi, avec un étiquetage aux couleurs de l'autorite de sante, des fonctionnalités personnalisables, et disponible en téléchargement pour les titulaires de licence.",
+          "imageUrl": "/assets/images/icons/white-labeled-app-icon.svg"
+        },
+        {
+          "title": "Notifications push",
+          "description": "Les autorités supervisent l'utilisation des notifications push afin de transmettre des informations aux titulaires de licence, tout en assurant la confirmation de réception et la collecte des retours.",
+          "imageUrl": "/assets/images/icons/push-notification-icon.svg"
+        },
+        {
+          "title": "Passerelle de paiement ",
+          "description": "WLorsque des frais sont requis, notre passerelle de paiement en ligne, personnalisable, facilite le rapprochement financier tout en garantissant la sécurisation anticipée des fonds. Elle peut être déployée localement selon vos besoins",
+          "imageUrl": "/assets/images/icons/payment-gateway-icon.svg"
+        }
+      ]
+    },
+
+    {
+      "id": "contact-us",
+      "title": "Contact us",
+      "subtitle": "Contact info",
+      "subtitleform": "Leave a Message",
+      "description": "For any information please don't hesitate to contact us",
+      "headquarters": "Headquarters",
+      "contactInfo": {
+        "phone": "+1 415 917 5246",
+        "email": "info@cmehub.net",
+        "address": "Delaware, USA"
+      },
+      "formFields": [
+        {
+          "label": "Full Name",
+          "type": "text",
+          "id": "fullName",
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "number",
+          "id": "phone",
+          "required": true
+        },
+        { "label": "Email", "type": "email", "id": "email", "required": true },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "id": "message",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "title": "Request Demo",
+      "subtitle": "Fill out the form and we'll be in touch shortly.",
+      "formFieldsRequest": [
+        {
+          "label": "Full Name",
+          "type": "text",
+          "id": "fullName",
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "number",
+          "id": "phone",
+          "required": true
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "id": "email",
+          "required": true
+        },
+        {
+          "type": "select",
+          "id": "demoType",
+          "label": "Select a demo type",
+          "required": true,
+          "options": [
+            { "label": "Macro Hub", "value": "macrohub" },
+            { "label": "Micro Hub", "value": "microhub" },
+            { "label": "CPD Marketplace", "value": "cpdmarketplace" }
+          ]
+        },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "id": "message",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

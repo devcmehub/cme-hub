@@ -1,0 +1,55 @@
+.valuePropositionGraph {
+  position: relative;
+  width: 100%;
+  // margin-top: 171px;
+  margin-bottom: 50px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 2rem;
+  }
+  @media (max-height: 750px) {
+    margin-bottom: 140px;
+  }
+}
+
+.circleGraph {
+  width: 100%;
+  // max-width: 374px;
+  display: grid;
+  place-items: center; // centers all children both horizontally and vertically
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Order from back to front: large > medium > small
+
+.circle-large {
+  width: 374px;
+  height: 374px;
+  background-color: #3e5161;
+  z-index: 1;
+}
+
+.circle-medium {
+  width: 296px;
+  height: 298px;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+
+.circle-small {
+  width: 240px;
+  height: 240px;
+  background: linear-gradient(
+    -82.76deg,
+    rgb(0, 145, 234) -17.628%,
+    rgb(7, 81, 128) 62.848%
+  );
+  z-index: 3;
+}

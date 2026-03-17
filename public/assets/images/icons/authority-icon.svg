@@ -1,0 +1,28 @@
+<svg width="112.000000" height="112.000000" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip30_849">
+			<rect id="lciensees-icon" width="112.000000" height="112.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip30_849)">
+		<circle id="Ellipse 83" r="56.000000" transform="matrix(0 1 -1 0 56 56)" fill="#283540" fill-opacity="1.000000"/>
+		<circle id="Ellipse 84" r="44.500000" transform="matrix(0 1 -1 0 56.5 56.5)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<mask id="mask30_896" mask-type="alpha" maskUnits="userSpaceOnUse" x="28.106445" y="28.209717" width="57.000000" height="57.000000">
+			<rect id="knight-shield" x="28.106445" y="28.209717" width="56.999996" height="56.999996" fill="#000000" fill-opacity="1.000000"/>
+		</mask>
+		<g mask="url(#mask30_896)">
+			<path id="Vector" d="M34.7 39.65C29.85 60.35 39.57 77.4 56.6 81.06C73.62 77.4 83.34 60.35 78.49 39.65C70 39.65 65.15 32.34 56.6 32.34C48.08 32.34 43.21 39.65 34.7 39.65Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+			<path id="Vector" d="M56.6 81.06C73.62 77.4 83.34 60.35 78.49 39.65C70 39.65 65.15 32.34 56.6 32.34C48.08 32.34 43.21 39.65 34.7 39.65C29.85 60.35 39.57 77.4 56.6 81.06Z" stroke="#283540" stroke-opacity="1.000000" stroke-width="3.000002"/>
+		</g>
+		<mask id="mask30_900" mask-type="alpha" maskUnits="userSpaceOnUse" x="37.106445" y="37.209717" width="39.000000" height="39.000000">
+			<rect id="tick-01" x="37.106445" y="37.209717" width="38.999996" height="39.000000" fill="#000000" fill-opacity="1.000000"/>
+		</mask>
+		<g mask="url(#mask30_900)">
+			<path id="Vector 6663" d="M44.81 62.39L44.79 62.41C43.95 62.41 43.29 61.75 43.29 60.91C43.29 60.07 43.95 59.41 44.79 59.41L44.81 59.43L44.81 62.39ZM67.86 46.89L67.87 46.87C68.66 46.57 69.51 46.96 69.8 47.75C70.09 48.54 69.71 49.39 68.92 49.68L68.89 49.67L67.86 46.89Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+			<path id="Vector 6663" d="M44.79 60.91C44.79 60.91 47.32 60.91 50.7 66.81C50.7 66.81 60.06 51.36 68.4 48.27" stroke="#161C22" stroke-opacity="1.000000" stroke-width="3.000002" stroke-linejoin="round" stroke-linecap="round"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,454 @@
+@import '../../styles/typography';
+@import '../../styles/spacing';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.hero {
+  // width: 100%;
+  // max-width: 1329px;
+  // height: auto;
+  // aspect-ratio: 1329 / 701;
+  // height: auto;
+  // width: 100%;
+  margin: 0 auto;
+  padding: $padding-16;
+
+  width: 100%;
+  aspect-ratio: 1329 / 701;
+  background-image: url('/assets/images/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    aspect-ratio: unset;
+    background-size: contain;
+    background-position: top;
+  }
+
+  // @supports (-webkit-touch-callout: none) {
+  //   width: 100%;
+  //   max-width: 1329px;
+  //   min-height: 150vh;
+  //   // min-height: calc(var(--vh, 1vh) * 100);
+  // }
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  //   width: 100%;
+  //   min-height: 115vh;
+  // }
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  //   width: 100%;
+  //   min-height: 85vh;
+  // }
+
+  // iPad Pro Portrait (11" & 12.9")
+  // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 77vh;
+  //   background-color: red;
+  // }
+
+  // iPad Pro Landscape
+  // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 65vh;
+  //   background-color: orange;
+  // }
+  // iPad Mini Portrait (7.9" & 8.3")
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 93vh;
+  //   background-color: yellow;
+  // }
+
+  // iPad Mini Landscape
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 834px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 100vh;
+  //   background-color: green;
+  // }
+
+  // NEW here
+
+  // // iPad Pro 12.9" (1024x1366) — Portrait
+  // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 85vh; // fallback
+  //   min-height: 100dvh;
+  // }
+
+  // // iPad Pro 12.9" — Landscape
+  // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 60vh; // fallback
+  //   min-height: 100dvh;
+  // }
+
+  // // iPad Mini (768x1024) — Portrait
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 90vh;
+  //   min-height: 90dvh;
+  // }
+
+  // // iPad Mini — Landscape
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 834px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 138dvh; // fallback
+  //   min-height: 138dvh;
+  // }
+
+  // // iPad 10.2" & 10.9" (between mini and pro)
+  // @media only screen and (min-device-width: 835px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
+  //   width: 100%;
+  //   min-height: 138dvh; // fallback
+  //   min-height: 138dvh;
+  // }
+
+  //   @media (max-width: 1440px) {
+  //     max-width: calc(100% - 2 * $padding-16);
+  //   }
+
+  //   @media (max-width: $breakpoint-lg) {
+  //     border-radius: 30px;
+  //   }
+  //   @media (max-width: $breakpoint-md) {
+  //     max-width: 98%;
+  //     border-radius: 30px;
+  //     height: inherit;
+  //   }
+
+  //   @media (max-width: $breakpoint-sm) {
+  //     max-width: 100%;
+  //     height: inherit;
+  //     padding: $padding-8;
+  //     background: url('/assets/images/hero-bg.svg') bottom/cover repeat-y;
+  //   }
+  //
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 2.4rem auto;
+  padding: 0 24px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+}
+
+.heroText {
+  max-width: 546px;
+  font-size: 1.25rem;
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 100%;
+  }
+}
+.heroButtons {
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    a {
+      width: 50%;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    a {
+      width: 50%;
+    }
+  }
+  @media (max-width: $breakpoint-xs) {
+    a {
+      width: 100%;
+    }
+  }
+}
+.heroTitle {
+  font-size: 7.2rem;
+  color: var(--color-white);
+  line-height: 80px;
+
+  @media (max-width: 768px) {
+    font-size: 3.8rem;
+    line-height: 48px;
+  }
+}
+
+.heroDescription {
+  font-size: 2.4rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+}
+
+.heroImages {
+  display: flex;
+  // gap: 48px;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero_img_1,
+  .hero_img_2 {
+    // width: auto;
+    // height: auto;
+    max-width: 100%;
+    display: block;
+    @media (max-width: $breakpoint-sm) {
+      height: 80%;
+    }
+  }
+
+  .hero_img_2 {
+    transform: translateY(-27px);
+  }
+}
+.heroImageContainer {
+  position: relative;
+  display: grid;
+  grid-template-areas: 'image';
+  width: fit-content;
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 294px; // or 318px for the first image
+  aspect-ratio: 294 / 388; // Adjust to match actual image dimensions
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 150px;
+  }
+}
+// .hero_img_1,
+// .hero_img_2 {
+//   object-fit: contain;
+//   // width: 100%; // optional fallback
+//   // height: 100%; // optional fallback
+// }
+
+.hero_img_1,
+.hero_img_2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+}
+.badgeWrapper {
+  position: absolute;
+}
+
+.user1 .badgeWrapper {
+  bottom: 47px;
+  left: -46px;
+}
+
+.user2 .badgeWrapper {
+  bottom: 0;
+  right: 20px;
+}
+@media (max-width: $breakpoint-sm) {
+  .user2,
+  .badgeWrapper {
+    display: none;
+  }
+}
+
+/* -------------------- */
+/* Reusable Card Badge  */
+/* -------------------- */
+
+.heroCard {
+  grid-area: image;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: $card-width;
+  height: $card-height;
+  background: url('/assets/images/card-base.svg') no-repeat;
+  background-size: contain;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  filter: drop-shadow(4px 4px 6px rgba(255, 255, 255, 0.3));
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    width: $card-width-md;
+    height: $card-height-md;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    width: $card-width-sm;
+    height: $card-height-sm;
+  }
+}
+
+/* Reusable Score Circle */
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  margin: 8px 0;
+  @include flex-center;
+}
+
+.chart {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+
+// .playButton {
+//   display: flex;
+//   align-items: center;
+//   gap: 1rem;
+//   position: absolute;
+//   left: 46%;
+//   top: 83%;
+//   transform: translate(
+//     -50%,
+//     -50%
+//   ); /* The -50% here refers to half of the button's height */
+//   z-index: 200;
+//   background: transparent;
+//   border: none;
+//   font-size: 1.2rem;
+//   font-weight: 600;
+//   color: white;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+//   @media (max-width: $breakpoint-md) {
+//     left: 47%;
+//     top: 81%;
+//     width: max-content;
+//   }
+//   @media (max-width: $breakpoint-sm) {
+//     left: 66%;
+//     top: 68%;
+//     width: max-content;
+//   }
+
+//   &:hover {
+//     .playIcon {
+//       filter: brightness(2) invert(0);
+//     }
+//   }
+// }
+.playButton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: -5.625rem;
+  bottom: 5.375rem;
+  /* Remove transform: translate() as we're not centering */
+  z-index: 200;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.2rem;
+    right: -3.5rem;
+    bottom: 5.5rem;
+    gap: 1rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 1.2rem;
+    right: -0.75rem;
+    bottom: 11.25rem;
+    gap: 1rem;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    @include button-base;
+  }
+  @media (max-width: $breakpoint-xs) {
+    font-size: 1.2rem;
+    right: -0.75rem;
+    bottom: 9.25rem;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    @include button-base;
+  }
+
+  &:hover {
+    .playIcon {
+      filter: brightness(2) invert(0);
+    }
+  }
+  @supports (-webkit-touch-callout: none) {
+    bottom: 1rem !important;
+  }
+}
+.videoModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.videoModal {
+  position: relative;
+  width: 90%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.closeModal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}

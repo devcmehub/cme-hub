@@ -1,0 +1,88 @@
+@import '../../styles/spacing';
+@import '../../styles/typography';
+@import '../../styles/layout';
+
+// src/components/PlatformCapabilities.module.scss
+.platformCapabilities {
+  background-color: var(--color-white);
+
+  padding: $spacing-48 0;
+  @media (max-width: $breakpoint-xs) {
+    text-align: center;
+  }
+}
+
+.section_title {
+  @extend .section_title;
+  color: var(--color-dark);
+  margin-bottom: 0;
+}
+
+.platformCapabilitiesDescription {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: var(--color-dark);
+  margin-bottom: $spacing-48;
+  @media (max-width: $breakpoint-md) {
+    text-align: center;
+  }
+}
+
+.capabilityCard {
+  background: url('/assets/images/bg-card-platform.svg') no-repeat;
+  width: 100%;
+  max-width: 318px;
+  height: 340px;
+  color: var(--color-dark);
+  @media (max-width: $breakpoint-xs) {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+
+    .flexRowReverse {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  h3,
+  p {
+    padding: $spacing-16 $spacing-24;
+  }
+  &:hover {
+    background: url('/assets/images/bg-card-platform-blue.svg') no-repeat;
+    color: var(--color-white);
+    transition: 0.1s ease-out 0.1s;
+    @media (max-width: $breakpoint-xs) {
+      background: none;
+      background-color: rgb(240, 240, 240);
+      color: inherit;
+    }
+  }
+}
+
+.capabilityIcon {
+  width: 89px;
+  height: 90px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+  @media (max-width: $breakpoint-xs) {
+    padding-top: 2rem;
+  }
+}
+.capabilityTitle {
+  font-size: 1.8rem;
+  font-weight: $font-weight-bold;
+}
+
+.capabilityDescription {
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  margin-top: $spacing-24;
+  @media (max-width: $breakpoint-xs) {
+    margin-top: 0;
+  }
+}
+.flexRowReverse {
+  flex-direction: row-reverse;
+}

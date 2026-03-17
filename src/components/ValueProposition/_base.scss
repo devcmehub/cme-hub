@@ -1,0 +1,34 @@
+.valueProposition {
+  padding: 2rem;
+  position: relative;
+  margin-bottom: 5rem;
+  min-height: 100vh;
+}
+
+.section_title {
+  color: var(--color-dark);
+  margin: 48px auto 1rem auto;
+  text-align: center;
+}
+
+.valuePropositionDescription {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+}
+
+.valuePropositionSubDescription {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+  color: rgb(40, 53, 64);
+  text-wrap: balance;
+}
+// @media (max-height: 600px) {
+//   .spacer {
+//     height: 80vh;
+//   }
+// }

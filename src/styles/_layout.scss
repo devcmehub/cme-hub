@@ -1,0 +1,102 @@
+@import 'spacing';
+
+// Container Widths
+$max-width: 1440px; // Fixed max width for standard layout
+$container-padding: 4.5rem; // Default side padding
+
+// Convert px to rem (1rem = 16px)
+$breakpoint-lg: 75rem; // 1200px → 75rem
+$breakpoint-md: 64rem; // 1024px → 64rem
+$breakpoint-sm: 48rem; // 768px → 48rem
+$breakpoint-xs: 30rem; // 480px → 30rem
+
+.page-wrapper {
+  width: 100%; /* Default width for smaller screens */
+  max-width: $max-width;
+  margin: 1rem auto;
+}
+
+/* Example: Adding padding on smaller screens */
+@media (max-width: $breakpoint-sm) {
+  .page-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+}
+// Standard Fixed-Width Container (like Bootstrap `.container`)
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+.spacer {
+  height: 150px;
+  visibility: hidden;
+  @media (max-height: 600px) {
+    height: 300px;
+  }
+}
+
+// Full-Width Container (like Bootstrap `.container-fluid`)
+// .container-fluid {
+//   padding: 0 $container-padding; // Adds some padding for spacing
+//   width: 100vw;
+//   margin-left: calc(-50vw + 50%);
+//   overflow-x: hidden;
+//   box-sizing: border-box; // Ensure padding and border are included in width
+// }
+.container-fluid {
+  // padding: 0 4.5rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow-x: clip; // prevents scroll but still allows layout to render
+  box-sizing: border-box;
+}
+
+.responsive-section {
+  min-height: clamp(500px, 90vh, 1000px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    max-width: 90%;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.header {
+  background-color: var(--color-white);
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1350px;
+  padding-top: $padding-16;
+
+  // @media (max-width: $breakpoint-md) {
+  //   margin: $margin-16;
+  // }
+  // @media (max-width: $breakpoint-sm) {
+  //   margin: $margin-8;
+  // }
+
+  // @media (max-width: $breakpoint-xs) {
+  //   margin: $margin-8;
+  // }
+}

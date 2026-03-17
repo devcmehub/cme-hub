@@ -1,0 +1,176 @@
+@import '../../styles/typography';
+@import '../../styles/spacing';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $padding-40 $padding-24;
+  margin-bottom: 3rem;
+
+  @media (max-width: $breakpoint-lg) {
+    flex-wrap: wrap;
+    padding: $padding-24 $padding-16;
+  }
+}
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+
+  @media (max-width: $breakpoint-md) {
+    display: block;
+  }
+}
+
+.menuWrapper {
+  display: flex;
+  gap: 2rem;
+  @media (max-width: $breakpoint-lg) {
+    margin-left: auto;
+  }
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-dark);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+  }
+}
+
+.menuWrapper.open {
+  transform: translateX(0);
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItem {
+    font-size: $font-size-md;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-md;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 0 $padding-8;
+
+    .navLink {
+      color: var(--color-white);
+      text-decoration: none;
+      position: relative;
+      line-height: $line-height-md; // Or just use a pixel value like 1.5rem
+      display: inline-block;
+      min-width: max-content;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 2.3rem;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--color-white);
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        font-weight: $font-weight-medium;
+        text-shadow: 0 0.05rem 0.1rem rgba(255, 255, 255, 0.4);
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.languageSelector {
+  position: relative;
+  z-index: 100;
+  margin-left: $margin-24;
+
+  @media (max-width: $breakpoint-md) {
+    margin-left: 0;
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+
+  .languageButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--color-white); // Or your theme dark
+    color: var(--color-white);
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .languageIcon {
+      display: inline-block;
+    }
+
+    .languageText {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    li {
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #1f2a37;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}

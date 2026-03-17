@@ -1,0 +1,204 @@
+// @import '../../styles/spacing';
+// @import '../../styles/typography';
+// @import '../../styles/layout';
+
+// // src/components/SuccessStories.module.scss
+// .successStories {
+//   position: relative; // Add this
+//   padding: 2rem;
+//   min-height: clamp(437px, 70vh, 900px);
+//   min-height: 90vh; // or 100vh for full-screen
+//   padding: 2rem 0;
+//   display: flex;
+//   align-items: center;
+//   @media (max-width: $breakpoint-md) {
+//     margin-bottom: 15rem;
+//   }
+//   @media (max-height: 800px) {
+//     margin-bottom: 100px;
+//   }
+// }
+// .successStoriesCards {
+//   display: grid;
+//   grid-template-columns: 1fr 3fr; /* Adjust based on design */
+//   align-items: center;
+//   margin-top: $spacing-48;
+//   // position: relative;
+
+//   @media (max-width: $breakpoint-md) {
+//     grid-template-columns: 1fr;
+//   }
+// }
+// .featuredBox {
+//   background-color: #1e293b; /* Adjust to your gray color */
+//   color: white;
+//   padding: 2rem;
+//   width: 100vw; /* Full viewport width */
+//   max-width: 75vw;
+//   height: 437px;
+//   border-radius: 0px 40px 40px 0px;
+//   @media (max-width: $breakpoint-md) {
+//     height: 230px;
+//   }
+
+//   /* Dark blue */
+//   background: rgb(40, 53, 64);
+//   margin-left: -50vw; /* Pull to the left */
+//   padding-left: 50vw; /* Prevent content from shifting */
+//   display: flex;
+//   align-items: center;
+
+//   h3 {
+//     font-size: 40px;
+//     font-weight: 700;
+//     line-height: 40px;
+//   }
+//   @media (max-width: $breakpoint-md) {
+//     max-width: 100vw;
+//     margin-left: -7vw;
+//     padding-left: 13vw;
+//     margin-bottom: 3rem;
+//   }
+// }
+// .section_title {
+//   @extend .section_title;
+//   color: var(--color-dark);
+//   margin-bottom: 0;
+// }
+
+// .successStoriesDescription {
+//   font-size: 16px;
+//   font-weight: 600;
+// }
+// .successStoriesSlideTitle {
+//   // width: 480px;
+//   // height: 437px;
+//   border-radius: 0px 40px 40px 0px;
+
+//   /* Dark blue */
+//   background: rgb(40, 53, 64);
+// }
+// .storiesGrid {
+//   display: flex;
+
+//   gap: 3rem;
+// }
+
+// .storyCard {
+//   // width: 318px;
+//   // height: 437px;
+//   width: 100%;
+//   max-width: 318px;
+//   height: 437px;
+//   aspect-ratio: 318 / 437;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   padding: $padding-24;
+//   border-radius: 30px;
+
+//   box-shadow:
+//     0px 1px 3px 0px rgba(15, 15, 15, 0.1),
+//     0px 5px 5px 0px rgba(15, 15, 15, 0.09),
+//     0px 11px 7px 0px rgba(15, 15, 15, 0.05),
+//     0px 20px 8px 0px rgba(15, 15, 15, 0.01),
+//     0px 32px 9px 0px rgba(15, 15, 15, 0);
+//   background: rgb(255, 255, 255);
+
+//   @media (max-width: 768px) {
+//     max-width: 280px;
+//     padding: 1.8rem;
+//   }
+
+//   @media (max-width: 480px) {
+//     max-width: 85%;
+//     padding: 1.2rem;
+//   }
+// }
+// .successStoriesUserInfo {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 1rem;
+//   align-items: center;
+//   img {
+//     width: 75px;
+//     height: 75px;
+//     object-fit: cover; /* Critical for preventing distortion */
+//     object-position: center; /* Focus on image center */
+//     border-radius: 50%;
+//   }
+// }
+// .storyQuote {
+//   font-style: italic;
+//   font-size: 16px;
+//   font-weight: 500;
+//   line-height: 24px;
+// }
+
+// .storyAuthor {
+//   font-size: 20px;
+//   font-weight: 700;
+// }
+// .storyPosition {
+//   font-size: 14px;
+//   font-weight: 400;
+// }
+
+// .customSlider {
+//   display: grid !important;
+//   align-items: center;
+//   width: 1000px;
+//   // height: 500px;
+//   height: 450px !important;
+// }
+// .sliderContainer {
+//   margin-left: 3rem;
+//   height: 450px !important;
+//   @media (max-width: 480px) {
+//     margin-left: 0;
+//   }
+// }
+
+// .customArrow {
+//   position: absolute;
+//   bottom: -10rem;
+//   z-index: 100;
+//   cursor: pointer;
+//   transition: opacity 0.3s ease;
+// }
+// .disabled {
+//   opacity: 0.3;
+//   pointer-events: none;
+//   cursor: default;
+// }
+// .next {
+//   // left: 8rem;
+//   display: block;
+// }
+// .prev {
+//   display: block;
+// }
+
+// .customNavWrapper {
+//   display: flex;
+//   justify-content: center;
+//   gap: 1rem;
+//   margin-top: 20px;
+// }
+
+// .arrowButton {
+//   background: transparent;
+//   border: none;
+//   cursor: pointer;
+
+//   &.next,
+//   &.prev {
+//     svg {
+//       display: block;
+//     }
+//   }
+// }
+// .arrowButton:disabled {
+//   opacity: 0.3;
+//   pointer-events: none;
+// }

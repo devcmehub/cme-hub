@@ -1,0 +1,672 @@
+// styles/globals.scss
+@import 'layout';
+@import 'typography';
+@import 'spacing';
+@import 'variables';
+@import 'mixins';
+
+:root {
+  --color-dark: rgba(10, 15, 25, 1);
+  --color-off-white: rgba(245, 245, 245, 1);
+  --color-blue: rgba(0, 122, 255, 1);
+  --color-light-blue: rgba(100, 180, 255, 1);
+  --color-dark-blue: rgba(5, 30, 52, 1);
+  --color-lighter-dark-blue: rgba(15, 45, 75, 1);
+  --color-dark-gray: rgba(90, 90, 90, 1);
+  --color-light-gray: rgba(200, 200, 200, 1);
+  --color-white: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  // height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+[role='list'] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-dark);
+}
+a:hover {
+  color: var(--color-light-blue);
+}
+// Heading Styles
+h1 {
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-lg;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-md;
+}
+
+h3 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-md;
+}
+
+h4 {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-md;
+}
+
+p {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-md;
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  background-color: var(--color-off-white);
+  color: var(--color-dark);
+  font-size: $font-size-md;
+  min-block-size: 100vh;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+picture {
+  max-inline-size: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+main {
+  padding: $padding-48;
+
+  @media (max-width: $breakpoint-md) {
+    margin: $margin-16;
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin: $margin-8;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    margin: $margin-8;
+  }
+}
+
+/*
+  Flexbox Utility Classes
+
+  These classes provide common Flexbox layouts.
+  Add these to your CSS or Sass file for reuse.
+*/
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row; /* Default, but good to be explicit */
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap; /* Default */
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Justify Content */
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch; /* Default */
+}
+
+/* Align Self */
+
+.align-self-auto {
+  align-self: auto;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+/* Fill */
+.fill {
+  flex: 1;
+}
+
+/* Grow and Shrink */
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1; /* Default */
+}
+
+/* Order */
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-last {
+  order: 9999; /* Or a very high number */
+}
+
+/* Spacing Variables (same as before) */
+
+/* Base spacing unit (adjust this to your preference) */
+$base-spacing: 8px;
+
+/* Multipliers for creating consistent spacing scale */
+$spacing-multiplier: 1;
+
+/* Padding Classes */
+
+.padding-0 {
+  padding: 0;
+}
+
+.padding-xs {
+  padding: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.padding-sm {
+  padding: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.padding-md {
+  padding: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.padding-lg {
+  padding: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.padding-xl {
+  padding: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.padding-xxl {
+  padding: $base-spacing * ($spacing-multiplier * 4);
+}
+
+/* Padding - Left/Right Classes */
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-left-xs {
+  padding-left: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.padding-left-sm {
+  padding-left: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.padding-left-md {
+  padding-left: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.padding-left-lg {
+  padding-left: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.padding-left-xl {
+  padding-left: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.padding-left-xxl {
+  padding-left: $base-spacing * ($spacing-multiplier * 4);
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.padding-right-xs {
+  padding-right: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.padding-right-sm {
+  padding-right: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.padding-right-md {
+  padding-right: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.padding-right-lg {
+  padding-right: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.padding-right-xl {
+  padding-right: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.padding-right-xxl {
+  padding-right: $base-spacing * ($spacing-multiplier * 4);
+}
+
+/* Padding - Top/Bottom Classes (Optional - if you need them separate) */
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-top-xs {
+  padding-top: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.padding-top-sm {
+  padding-top: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.padding-top-md {
+  padding-top: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.padding-top-lg {
+  padding-top: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.padding-top-xl {
+  padding-top: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.padding-top-xxl {
+  padding-top: $base-spacing * ($spacing-multiplier * 4);
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-bottom-xs {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.padding-bottom-sm {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.padding-bottom-md {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.padding-bottom-lg {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.padding-bottom-xl {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.padding-bottom-xxl {
+  padding-bottom: $base-spacing * ($spacing-multiplier * 4);
+}
+
+/* Margin Classes */
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-xs {
+  margin: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.margin-sm {
+  margin: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.margin-md {
+  margin: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.margin-lg {
+  margin: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.margin-xl {
+  margin: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.margin-xxl {
+  margin: $base-spacing * ($spacing_multiplier * 4);
+}
+
+/* Margin - Left/Right Classes */
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.margin-left-xs {
+  margin-left: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.margin-left-sm {
+  margin-left: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.margin-left-md {
+  margin-left: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.margin-left-lg {
+  margin-left: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.margin-left-xl {
+  margin-left: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.margin-left-xxl {
+  margin-left: $base-spacing * ($spacing-multiplier * 4);
+}
+
+.margin-right-0 {
+  margin-right: 0;
+}
+
+.margin-right-xs {
+  margin-right: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.margin-right-sm {
+  margin-right: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.margin-right-md {
+  margin-right: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.margin-right-lg {
+  margin-right: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.margin-right-xl {
+  margin-right: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.margin-right-xxl {
+  margin-right: $base-spacing * ($spacing-multiplier * 4);
+}
+
+/* Margin - Top/Bottom Classes (Optional - if you need them separate) */
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-top-xs {
+  margin-top: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.margin-top-sm {
+  margin-top: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.margin-top-md {
+  margin-top: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.margin-top-lg {
+  margin-top: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.margin-top-xl {
+  margin-top: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.margin-top-xxl {
+  margin-top: $base-spacing * ($spacing_multiplier * 4);
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-bottom-xs {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 0.25);
+}
+
+.margin-bottom-sm {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 0.5);
+}
+
+.margin-bottom-md {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 1);
+}
+
+.margin-bottom-lg {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 2);
+}
+
+.margin-bottom-xl {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 3);
+}
+
+.margin-bottom-xxl {
+  margin-bottom: $base-spacing * ($spacing-multiplier * 4);
+}
+
+button {
+  pointer-events: auto;
+  user-select: auto;
+}
+
+a.button_primary {
+  pointer-events: auto !important;
+  z-index: 10 !important;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero,
+.heroContent,
+.heroImages {
+  pointer-events: auto;
+}
+body.modal-open {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+}
+// Buttons
+button.button_primary,
+a.button_primary {
+  @include button-primary;
+}
+
+button.button_outlined,
+a.button_outlined {
+  @include button-base;
+}
+.grid-auto-fill {
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  justify-content: center;
+}
+.slick-slide {
+  height: 450px !important;
+}
+.slick-track {
+  display: flex;
+  height: 450px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.slick-list {
+  height: 480px !important;
+}
+@supports (-webkit-touch-callout: none) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: env(safe-area-inset-top);
+  }
+}

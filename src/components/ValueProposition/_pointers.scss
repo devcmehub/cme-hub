@@ -1,0 +1,89 @@
+.pointers {
+  position: relative;
+  z-index: 100;
+
+  .pointerAuthority,
+  .pointerLciensees,
+  .pointerCe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .pointerAuthority {
+    transform: translate(-426px, 130px);
+  }
+  .pointerLciensees {
+    transform: translate(-52px, 341px);
+  }
+  .pointerCe {
+    transform: translate(149px, 138px);
+    transform: translate(137px, 48px);
+  }
+}
+
+.ValueGraphicText {
+  ul {
+    // list-style: none;
+    padding-left: 0;
+  }
+  max-width: 300px;
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 1.5;
+}
+
+.pointerAuthorityLink,
+.pointerLcienseesLink,
+.pointerCeLink {
+  color: var(--color-dark);
+  text-decoration: none;
+
+  .ValueGraphicText {
+    text-align: left;
+    width: calc(169px - 5rem + 11vw);
+  }
+}
+
+.pointerAuthorityLink .ValueGraphicText {
+  transform: translate(calc(20rem - 23vw), calc(-14rem + 16vh));
+}
+
+.pointerLcienseesLink .ValueGraphicText {
+  transform: translate(calc(10vw + 6px), calc(-25rem + 15vh));
+}
+
+.pointerCeLink .ValueGraphicText {
+  transform: translate(calc(20vw - 14rem), calc(-14rem + 16vh));
+}
+
+.svgLinkContainer {
+  display: inline-block;
+
+  .changeOnHover {
+    fill: #283540;
+    stroke: currentColor;
+    transition:
+      fill 0.3s ease,
+      stroke 0.3s ease;
+  }
+
+  &:hover .changeOnHover {
+    fill: #0c91e6;
+    stroke: #0c91e6;
+    color: #0c91e6;
+  }
+
+  .changeStrokeOnHover {
+    stroke: currentColor;
+    transition: stroke 0.3s ease;
+  }
+
+  &:hover .changeStrokeOnHover {
+    stroke: #0c91e6;
+    color: #0c91e6;
+  }
+
+  #Ellipse\ 78-fill {
+    fill: #ffffff;
+  }
+}

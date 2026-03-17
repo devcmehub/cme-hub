@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#b186e7",
+    "editor.foreground": "#ffffff",
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#d1b69f1f",
+    "activityBar.background": "#451C50",
+    "titleBar.activeBackground": "#612771",
+    "titleBar.activeForeground": "#FDFBFE"
+  }
+}

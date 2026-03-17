@@ -1,0 +1,143 @@
+@import '../../styles/layout';
+@import '../../styles/typography';
+@import '../../styles/spacing';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeOverlayIn 0.3s ease-out;
+
+  @keyframes fadeOverlayIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.modalContent {
+  background: var(--color-dark-blue);
+  border-radius: 30px;
+  padding: 5rem;
+  position: relative;
+  overflow-y: auto; // Enable vertical scrolling
+  overflow-x: hidden;
+  animation: modalFadeIn 0.35s ease-out;
+  iframe {
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  &.auto {
+    width: auto;
+    max-width: 90vw;
+    height: auto;
+    max-height: 90vh;
+  }
+
+  // fallback default, if no class is passed
+  height: 60vh;
+
+  @media (max-width: $breakpoint-md) {
+    width: 80vw;
+    height: 100dvh;
+    padding: 0;
+    text-align: left;
+  }
+  @media (max-width: $breakpoint-sm) {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  // Small Modal
+  &.small {
+    width: 320px;
+    height: auto;
+    max-height: 90vh;
+  }
+
+  // Medium Modal
+  &.medium {
+    width: 60vw;
+    height: 60vh;
+
+    @media (max-width: $breakpoint-md) {
+      width: 80vw;
+      height: 100dvh;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 100vw;
+      height: 100dvh;
+    }
+  }
+
+  // Large Modal
+  &.large {
+    width: 80vw;
+    height: 95vh;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100vw;
+      height: 100dvh;
+    }
+  }
+
+  // Fullscreen Modal
+  &.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  // Auto-sizing Modal
+  &.auto {
+    width: auto;
+    max-width: 90vw;
+    height: auto;
+    max-height: 90vh;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  background: var(--color-dark);
+  border-radius: 50%;
+  top: 2.75rem;
+  right: 3rem;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 99999;
+  @media (max-width: $breakpoint-md) {
+    width: unset !important;
+  }
+}
+
+.iframeContainer {
+  position: relative;
+  z-index: 1;
+}

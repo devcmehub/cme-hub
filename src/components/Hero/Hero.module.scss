@@ -1,0 +1,292 @@
+@import '../../styles/typography';
+@import '../../styles/spacing';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.hero {
+  background: url('/assets/images/hero-bg.webp') center/cover no-repeat;
+  width: 100%;
+  max-width: 1329px;
+  // aspect-ratio: 1329 / 701;
+  margin: 0 auto;
+  padding: $padding-16;
+  border-radius: 30px;
+  @media (max-width: 1440px) {
+    max-width: calc(100% - 2 * $padding-16); // Ensures it fits within padding
+  }
+  @media (max-width: $breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1400px;
+  // margin: 2.4rem auto;
+  padding: 0 24px;
+  position: relative;
+  @media (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.heroText {
+  max-width: 546px;
+  font-size: 1.25rem;
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.heroButtons {
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    a,
+    button {
+      width: 50%;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    a,
+    button {
+      width: 50%;
+    }
+  }
+  @media (max-width: $breakpoint-xs) {
+    a,
+    button {
+      width: 100%;
+    }
+  }
+}
+.heroTitle {
+  font-size: 6.5rem;
+  color: var(--color-white);
+  line-height: 70px;
+
+  @media (max-width: 768px) {
+    font-size: 3.8rem;
+    line-height: 48px;
+  }
+}
+
+.heroDescription {
+  font-size: 2.4rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+}
+
+.heroImages {
+  display: flex;
+  // gap: 48px;
+  justify-content: center;
+  position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0; // This keeps images from getting squished
+  }
+  .hero_img_1,
+  .hero_img_2 {
+    max-width: 100%;
+    display: block;
+    @media (max-width: $breakpoint-sm) {
+      height: 80%;
+    }
+  }
+
+  .hero_img_2 {
+    transform: translateY(-27px);
+  }
+}
+.heroImageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: stretch;
+  @media (max-width: $breakpoint-sm) {
+    place-items: end;
+    align-items: flex-start;
+  }
+}
+
+.hero_img_1 {
+  grid-area: 1 / 1;
+}
+
+.playButton {
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  margin: 5rem -5rem;
+
+  @media (max-height: $breakpoint-md) {
+    justify-self: end;
+    // font-size: 1.3rem !important;
+    // width: 100% !important;
+    // margin: 0 !important;
+    // top: 3rem;
+  }
+  @media (max-height: $breakpoint-sm) {
+    justify-self: center;
+    font-size: 1.3rem !important;
+    width: 100% !important;
+    margin: 0 !important;
+    top: 3rem;
+    // margin: -14rem -5rem;
+  }
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 294px; // or 318px for the first image
+  // aspect-ratio: 294 / 388; // Adjust to match actual image dimensions
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 150px;
+  }
+}
+
+.hero_img_1,
+.hero_img_2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+}
+.badgeWrapper {
+  position: relative;
+}
+.user1 {
+  display: grid;
+}
+.user1 .badgeWrapper {
+  transform: translate(-4rem, -19rem);
+}
+
+.user2 .badgeWrapper {
+  transform: translate(40%, -13rem);
+}
+@media (max-width: $breakpoint-sm) {
+  .user2,
+  .user2 .badgeWrapper {
+    display: none;
+  }
+}
+/* -------------------- */
+/* Reusable Card Badge  */
+/* -------------------- */
+
+.heroCard {
+  grid-area: image;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: $card-width;
+  height: $card-height;
+  background: url('/assets/images/card-base.svg') no-repeat;
+  background-size: contain;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  filter: drop-shadow(4px 4px 6px rgba(255, 255, 255, 0.3));
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    width: $card-width-md;
+    height: $card-height-md;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    width: $card-width-sm;
+    height: $card-height-sm;
+  }
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 200;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.2rem;
+    justify-self: end;
+    gap: 1rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 1.2rem;
+
+    margin: -1rem 3rem;
+    gap: 1rem;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    @include button-base;
+  }
+  @media (max-width: $breakpoint-xs) {
+    font-size: 1.2rem;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    @include button-base;
+  }
+
+  &:hover {
+    .playIcon {
+      filter: brightness(2) invert(0);
+    }
+  }
+  @supports (-webkit-touch-callout: none) {
+    top: 2rem !important;
+  }
+}
+
+/* iOS Safari height fix */
+@supports (-webkit-touch-callout: none) {
+  .hero {
+    min-height: 100dvh; // Use dynamic vh unit on iOS
+    height: auto;
+    aspect-ratio: unset; // Cancel aspect-ratio if it’s causing issues on iOS
+    background-attachment: scroll !important;
+  }
+
+  .heroContent {
+    padding-bottom: 5vh; // Ensure content doesn’t overflow
+  }
+
+  .heroImageWrapper {
+    max-width: 80%;
+    aspect-ratio: auto;
+  }
+}

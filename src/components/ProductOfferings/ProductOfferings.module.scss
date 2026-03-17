@@ -1,0 +1,76 @@
+@import '../../styles/spacing';
+@import '../../styles/typography';
+@import '../../styles/layout';
+
+// styles/ProductOfferings.module.scss
+.productOfferings {
+  background: url('/assets/images/product-offering-bg.webp') top/cover no-repeat;
+  padding: 6rem 0;
+  a {
+    color: var(--color-blue);
+    &:hover {
+      color: var(--color-dark-blue);
+    }
+  }
+
+  h2 {
+    color: var(--color-white);
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-lg;
+    margin-bottom: $spacing-48;
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
+  }
+
+  .offeringsGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    @media (max-width: $breakpoint-md) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+  .offeringCard {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 432px;
+    // height: 450px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18;
+    padding: 40px;
+    img {
+      border-radius: 20px;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      height: fit-content;
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 24 / 8;
+        object-fit: cover;
+      }
+    }
+  }
+
+  h3 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    margin: $margin-24 0;
+  }
+
+  p {
+    font-size: $font-size-md;
+    color: var(--color-dark);
+  }
+}

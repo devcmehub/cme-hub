@@ -1,0 +1,172 @@
+{
+  "navbar": {
+    "imageUrl": "/assets/images/cme-hub-logo.svg",
+    "links": [
+      { "text": "Why Us", "url": "#value-proposition" },
+      { "text": "Product Offerings", "url": "#product-offerings" },
+      { "text": "Features", "url": "#features" },
+      { "text": "Contact Us", "url": "#contact" }
+    ]
+  },
+  "hero": {
+    "title": "The Learning Management System (LMS) for CME / CPD ",
+    "description": "Ensure compliance of your healthcare professionals",
+    "buttonText1": "Get Started ",
+    "buttonText2": "Request Demo"
+  },
+  "about": {
+    "id": "what-is-cme-hub",
+    "title": "WHAT IS CME HUB?",
+    "description": "CME Hub allows healthcare authorities ensure compliance of their healthcare practitioners, by automating the flow of Continuing Education (CE) credits from CE Course Providers to Licensees, passing through the essential accreditation approval, all within a unified platform."
+  },
+
+  "sections": [
+    {
+      "id": "value-proposition",
+      "title": "We centralize all your CME/CPD processes in one place",
+      "subDescription": "CME Hub is the Learning Management System (LMS) for CME/CPD. CME Hub allows all key stakeholders in the CME/CPD ecosystem to communicate together through a unified platform, allowing for more efficient management of the CME/CPD and fully digitizing the process.",
+      "imageUrl": "/assets/images/placeholders/value-proposition.png"
+    },
+    {
+      "id": "product-offerings",
+      "title": "Product offerings",
+      "offerings": [
+        {
+          "title": "Macro Hub",
+          "description": "Recommended for national healthcare authorities. Macro Hub has specialized modules for accrediting and licensing authorities. It creates a unified LMS system for relevant authorities where all CME/CPD activities are tracked in real-time, and so is the compliance of the healthcare professionals.",
+          "imageUrl": "/assets/images/placeholders/product-offering-1.jpg"
+        },
+        {
+          "title": "Micro Hub",
+          "description": "Recommended for CPD providers and for hospitals who are looking to track the compliance of their HCP. Micro Hub allows the hospital to have full visibility over the CME/CPD performance of their healthcare professionals. Reporting can then be easily made to the national authority.",
+          "imageUrl": "/assets/images/placeholders/product-offering-2.jpg"
+        },
+        {
+          "title": "CPD Marketplace",
+
+          "description": "Our Marketplace is the best place for healthcare professionals to find all CME/CPD offerings. Also, the right place for CPD providers to have more visibility in the CPD/CME ecosystem. To find out more about our marketplace and its availability in your country, <br/> please <a href=\"#contact\" class=\"contact-us\">Contact US</a>",
+
+          "imageUrl": "/assets/images/placeholders/product-offering-3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "platform-capabilities",
+      "title": "Platform capabilities",
+      "description": "Everything is Connected",
+      "capabilities": [
+        {
+          "title": "REAL TIME AUDITING",
+          "description": "CE credits performance is traced in real-time and reported to the licensing board. Public rating of CE providers and their courses reduces auditing needs.",
+          "imageUrl": "/assets/images/icons/real-time-auditing-icon.svg"
+        },
+        {
+          "title": "MARKETPLACE",
+          "description": "A wide variety of Courses filtered by date, location, specialty, category and accreditation source.",
+          "imageUrl": "/assets/images/icons/market-place-icon.svg"
+        },
+        {
+          "title": "ELECTRONIC ACCREDITATION",
+          "description": "Boards or accrediting bodies may approve CE providers on yearly or per course basis.",
+          "imageUrl": "/assets/images/icons/electronic-accreditation-icon.svg"
+        },
+        {
+          "title": "ATTENDANCE CONTROL",
+          "description": "Electronic confirmation of individual course attendance and duration.",
+          "imageUrl": "/assets/images/icons/attendance-control-icon.svg"
+        },
+        {
+          "title": "WHITE LABELED APP",
+          "description": "A ready to go mobile application with the Board labeling, customizable features and to download by Licensees.",
+          "imageUrl": "/assets/images/icons/white-labeled-app-icon.svg"
+        },
+        {
+          "title": "PUSH NOTIFICATIONS",
+          "description": "Boards control push for notifications use in transmitting information to licensees and for confirmation of receipt and feedback.",
+          "imageUrl": "/assets/images/icons/push-notification-icon.svg"
+        },
+        {
+          "title": "PAYMENT GATEWAY",
+          "description": "When fee collection is needed, our online payment gateway can be customized to facilitate financial reconciliation and secure funds upfront. Payment gateway can be Implemented locally",
+          "imageUrl": "/assets/images/icons/payment-gateway-icon.svg"
+        }
+      ]
+    },
+    {
+      "id": "contact-us",
+      "title": "Contact us",
+      "subtitle": "Contact info",
+      "subtitleform": "Leave a Message",
+      "description": "For any information please don't hesitate to contact us",
+      "headquarters": "Headquarters",
+      "contactInfo": {
+        "phone": "+1 415 917 5246",
+        "email": "info@cmehub.net",
+        "address": "Delaware, USA"
+      },
+      "formFields": [
+        {
+          "label": "Full Name",
+          "type": "text",
+          "id": "fullName",
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "number",
+          "id": "phone",
+          "required": true
+        },
+        { "label": "Email", "type": "email", "id": "email", "required": true },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "id": "message",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "title": "Request Demo",
+      "subtitle": "Fill out the form and we'll be in touch shortly.",
+      "formFieldsRequest": [
+        {
+          "label": "Full Name",
+          "type": "text",
+          "id": "fullName",
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "number",
+          "id": "phone",
+          "required": true
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "id": "email",
+          "required": true
+        },
+        {
+          "type": "select",
+          "id": "demoType",
+          "label": "Select a demo type",
+          "required": true,
+          "options": [
+            { "label": "Macro Hub", "value": "macrohub" },
+            { "label": "Micro Hub", "value": "microhub" },
+            { "label": "CPD Marketplace", "value": "cpdmarketplace" }
+          ]
+        },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "id": "message",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

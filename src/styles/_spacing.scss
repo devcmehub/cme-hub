@@ -1,0 +1,44 @@
+// src/styles/_spacing.scss
+
+// Spacing System
+
+// Base Spacing Unit (8px)
+$base-spacing-unit: 0.8rem; // 8px (assuming root font-size is 16px)
+
+// Spacing Multipliers (based on 8px multiples)
+$spacing-4: $base-spacing-unit * 0.5; // 8px
+$spacing-8: $base-spacing-unit * 1; // 8px
+$spacing-16: $base-spacing-unit * 2; // 16px
+$spacing-24: $base-spacing-unit * 3; // 24px
+$spacing-32: $base-spacing-unit * 4; // 32px
+$spacing-40: $base-spacing-unit * 5; // 40px
+$spacing-48: $base-spacing-unit * 6; // 48px
+$spacing-56: $base-spacing-unit * 7; // 56px
+$spacing-64: $base-spacing-unit * 8; // 64px
+$spacing-72: $base-spacing-unit * 9; // 72px
+$spacing-80: $base-spacing-unit * 10; // 80px
+
+// Padding Variables
+$padding-4: $spacing-4;
+$padding-8: $spacing-8;
+$padding-16: $spacing-16;
+$padding-24: $spacing-24;
+$padding-32: $spacing-32;
+$padding-40: $spacing-40;
+$padding-48: $spacing-48;
+$padding-56: $spacing-56;
+$padding-64: $spacing-64;
+$padding-72: $spacing-72;
+$padding-80: $spacing-80;
+
+// Margin Variables
+$margin-8: $spacing-8;
+$margin-16: $spacing-16;
+$margin-24: $spacing-24;
+$margin-32: $spacing-32;
+$margin-40: $spacing-40;
+$margin-48: $spacing-48;
+$margin-56: $spacing-56;
+$margin-64: $spacing-64;
+$margin-72: $spacing-72;
+$margin-80: $spacing-80;

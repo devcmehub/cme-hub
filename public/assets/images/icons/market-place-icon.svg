@@ -1,0 +1,32 @@
+<svg width="89.717773" height="90.000000" viewBox="0 0 89.7178 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip375_1589">
+			<rect id="computer" rx="19.500000" width="52.915287" height="52.915287" transform="translate(18.401855 18.542480)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip375_1590">
+			<rect id="analytics-02" rx="0.000000" width="25.957645" height="25.957645" transform="translate(31.880371 29.321533)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip375_1640">
+			<rect id="note-03" rx="14.500000" width="29.000000" height="29.000000" transform="translate(30.214844 26.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Rectangle 17841" rx="20.000000" width="89.717865" height="90.000000" fill="#3E5162" fill-opacity="1.000000"/>
+	<rect id="Rectangle 17841" x="0.500000" y="0.500000" rx="20.000000" width="88.717865" height="89.000000" stroke="#FFFFFF" stroke-opacity="0.790000" stroke-width="1.000000"/>
+	<rect id="computer" rx="19.500000" width="52.915287" height="52.915287" transform="translate(18.401855 18.542480)" fill="#3E5162" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip375_1589)">
+		<path id="Vector 6709" d="M49.35 22.53C56.71 22.53 60.4 22.53 63.01 24.36C63.97 25.03 64.81 25.87 65.49 26.84C67.32 29.45 67.32 33.14 67.32 40.5C67.32 47.87 67.32 51.55 65.49 54.16C64.81 55.13 63.97 55.97 63.01 56.65C60.4 58.47 56.71 58.47 49.35 58.47L40.36 58.47C33 58.47 29.31 58.47 26.7 56.65C25.73 55.97 24.89 55.13 24.22 54.16C22.39 51.55 22.39 47.87 22.39 40.5C22.39 33.14 22.39 29.45 24.22 26.84C24.89 25.87 25.73 25.03 26.7 24.36C29.31 22.53 33 22.53 40.36 22.53L49.35 22.53Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.500000"/>
+		<path id="Vector" d="M48.78 58.47C47.77 61.16 48.16 64.4 49.76 66.52L50.47 67.46M40.93 58.47C41.94 61.16 41.54 64.4 39.95 66.52L39.24 67.46" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.500000" stroke-linecap="round"/>
+		<path id="Vector 3994" d="M33.62 67.46L56.09 67.46" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.500000" stroke-linecap="round"/>
+	</g>
+	<g clip-path="url(#clip375_1640)">
+		<path id="Vector" d="M50.58 28L50.58 30.5M44.33 28L44.33 30.5M38.08 28L38.08 30.5" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Rectangle 17840" d="M46.21 29.25C50.33 29.25 52.4 29.25 53.68 30.53C54.96 31.81 54.96 33.87 54.96 38L54.96 44.25C54.96 48.37 54.96 50.43 53.68 51.71C52.4 53 50.33 53 46.21 53L42.46 53C38.33 53 36.27 53 34.99 51.71C33.71 50.43 33.71 48.37 33.71 44.25L33.71 38C33.71 33.87 33.71 31.81 34.99 30.53C36.27 29.25 38.33 29.25 42.46 29.25L46.21 29.25Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+		<path id="Vector 3076" d="M46.21 45.5L50.58 45.5" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+		<path id="Vector 3077" d="M46.21 36.75L50.58 36.75" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+		<path id="Vector 6664" d="M38.08 38C38.08 38 38.71 38 39.33 39.25C39.33 39.25 41.32 36.12 43.08 35.5" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector 6665" d="M38.08 46.75C38.08 46.75 38.71 46.75 39.33 48C39.33 48 41.32 44.87 43.08 44.25" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
