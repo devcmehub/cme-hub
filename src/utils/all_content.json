@@ -248,8 +248,8 @@
             "title": "AUTORITÉ",
             "items": [
               "Une plateforme sécurisée et unifiée pour :",
-              "Suivre et valider les performances DPC des professionnels de santé",
-              "méliorer l'efficacité, la traçabilité et la conformité réglementaire",
+              "Suivre et Valider les cursus de certification professionnelles des professionnel de santé",
+              "Améliorer l'efficacité, la traçabilité et la conformité réglementaire",
               "Assurer la conformité continue des professionnels de santé",
               "Réaliser des audits en temps réel de l'ensemble des titulaires de licence"
             ]
@@ -257,16 +257,17 @@
           {
             "title": "Professionnels de Sante",
             "items": [
-              "Marketplace centralisé de formations DPC accréditées, en ligne et en présentiel",
-              "Portefeuille numérique personnalisé pour le suivi et la validation des crédits DPC"
+              "Un catalogue complet et accessible référençant les formations certifiantes",
+              "Portefeuille numérique personnalisé pour le suivi et la validation de votre certification professionnelle"
             ]
           },
           {
-            "title": "Organismes de DPC",
+            "title": "Organisme de certification",
             "items": [
               "Accroître votre visibilité sur le marché du DPC",
-              "Optimiser la gestion des paiements et des accréditations des formations",
-              "Automatiser le reporting des certificats DPC auprès des autorités compétentes"
+              "Optimiser la déclaration et la délivrance des certifications",
+              "Automatiser le reporting des certifications aux autorités institutionnelles",
+              "Assurer un suivi optimal de vos paiement et une automatisation du portefeuille client"
             ]
           }
         ]
@@ -298,7 +299,7 @@
         "description": "Tout est connecté",
         "capabilities": [
           {
-            "title": "Audit en ligneAudits temps réel et auto-évaluation pour conformité multi-certifications",
+            "title": "Audit en temps réel",
             "description": "Les crédits du DPC sont suivis en temps réel et automatiquement transmis à l'autorité concernée. La valorisation publique des organismes du DPC et de leurs formations contribue à réduire significativement les besoins en audits.",
             "imageUrl": "/assets/images/icons/real-time-auditing-icon.svg"
           },
