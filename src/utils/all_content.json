@@ -223,7 +223,7 @@
     },
     "hero": {
       "title": "La Platforme de ma Certification Professionelle",
-      "description": "Assurez la conformité de vos professionnels de santé",
+      "description": "Avec CME Hub, restez en conformité et assurez le suivi de vos formations avec facilité",
       "buttonText1": "Commencer ",
       "buttonText2": "Demander une Démo",
       "videoButtonText": "Comment ça marche",
@@ -240,8 +240,8 @@
     "sections": [
       {
         "id": "value-proposition",
-        "title": "Tous les processus liés au DPC sont centralisés sur une interface unifiée",
-        "subDescription": "CME Hub est le système de gestion de l’apprentissage (LMS) dédié au développement professionnel continu (DPC). Il connecte l’ensemble des acteurs clés de l’écosystème via une plateforme unifiée, facilitant ainsi une gestion plus efficace du DPC et une digitalisation complète du processus.",
+        "title": "Tous les processus liés à la certification professionnelle sont centralisés sur cette interface unique",
+        "subDescription": "CME Hub est un système de gestion et de suivi dédié aux professionnels de santé et aux autorités institutionnelles. Il connecte tous les acteurs clés de la certification, facilitant ainsi une gestion plus efficace et une transparence grâce à la digitalisation complète du processus.",
         "imageUrl": "/assets/images/placeholders/value-proposition.png",
         "keyBenefits": [
           {
@@ -282,12 +282,12 @@
           },
           {
             "title": "Micro Hub",
-            "description": "Recommandé pour les organismes de DPC et les hôpitaux souhaitant assurer la conformité de leurs professionnels de santé, Micro Hub offre une visibilité complète sur les performances DPC de leur personnel. Les rapports générés peuvent être transmis facilement aux autorités nationales, simplifiant ainsi les obligations réglementaires.",
+            "description": "C’est la plateforme recommandée pour les organismes de formation, hôpitaux publics et structures privées.\nMicro Hub assure la conformité des certifications obligatoires des professionnels de santé avec une vision globale du personnel grâce à des outils puissants d’audit.\nDes rapports générés instantanément pour une transmission en temps réel aux institutions nationales, simplifiant les obligations réglementaires.",
             "imageUrl": "/assets/images/placeholders/product-offering-2.jpg"
           },
           {
-            "title": "Marketplace du DPC",
-            "description": "Notre plateforme est le point de référence incontournable pour le DPC. Les professionnels de santé y trouvent l'ensemble des offres de formation DPC, tandis que les organismes de DPC bénéficient d'une visibilité renforcée au sein de l’écosystème. <br/> Pour en savoir plus sur notre solution et sa disponibilité dans votre pays,  n’hésitez pas à <a href=\"#contact\" class=\"contact-us\">nous contacter</a>",
+            "title": "Le hub des certifications pros !",
+            "description": "Votre marketplace incontournable pour la certification professionnelle.\nProfessionnels de santé : découvrez toutes les formations certifiantes en un clic.\nVotre marketplace incontournable pour la certification professionnelle.\nProfessionnels de santé : découvrez toutes les formations certifiantes en un clic.\nOrganismes de formation : boostez votre visibilité dans l'écosystème santé.  \n<a href=\"#contact\" class=\"contact-us\">Contactez-nous</a> dès maintenant pour valider ou booster votre offre de certifications !",
             "imageUrl": "/assets/images/placeholders/product-offering-3.jpg"
           }
         ]
